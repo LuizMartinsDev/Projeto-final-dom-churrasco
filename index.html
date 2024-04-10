@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Carnavoro</title>
+    <link rel="icon" type="image/png" href="./image/Logotipo_para_açougue_moderno_vermelho-removebg-preview.png" />
+</head>
+<body>
+    <header>
+        <img class="logo" src="./image/Logotipo_para_açougue_moderno_vermelho-removebg-preview.png" alt="Logo do açougue">
+        <nav>
+            <ul class="lista-header">
+                <li>Formulário</li>
+                <li>Monte seu Churrasco</li>
+                <li>Sobre</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="fundo-churrasco">
+            <h1>CHURRASCO</h1>
+            <p>Monte seu Churrasco</p>
+        </section>
+        <section class="container-form-promo">
+            <h2>Cadastre-se para receber Promoções e Descontos</h2>
+            <form action="" id="form">
+                <div>
+                    <input type="text" class="input" id="nome" placeholder="Nome">
+                    <p id="error-message-nome" style="color: red;"></p>
+                </div>
+               
+                <div>
+                    <input type="email" class="input" id="email" placeholder="Email">
+                    <p id="error-message-email" style="color: red;"></p>
+                </div>
+                <div>
+                    <input type="text" class="input" id="cep" placeholder="CEP">
+                    <p id="error-message-cep" style="color: red;"></p>
+                </div>
+               
+                <div class="container-checkbox">
+                    <input type="checkbox" id="promo" checked>
+                    <label for="promo">aceito receber e-mails com promoções</label>
+                </div>
+                <button type="submit" id="buttonForm" >Enviar</button>
+            </form>
+        </section>
+        <section class="container-form-churrasco">
+            <h2>Calcule seu churras de fim de semana</h2>
+            <form id="formularioChurrasco">
+
+                <div>
+                    <label for="homens">Qual a quantidade de homens?</label>
+                    <input type="number" placeholder="Digite o valor..." id="homens">
+                    <p class="error-message-number" style="color: red;"></p>
+                </div>
+
+                <div>
+                    <label for="mulheres">Qual a quantidade de mulheres?</label>
+                    <input type="number"  placeholder="Digite o valor..." id="mulheres">
+                    <p class="error-message-number" style="color: red;"></p>
+                </div>
+
+                <div>
+                    <label for="criancas">Qual a quantidade de crianças?</label>
+                    <input type="number"  placeholder="Digite o valor..." id="criancas">
+                    <p class="error-message-number" style="color: red;"></p>
+                </div>
+
+                <div>
+                    <label for="pessoasQueBebem">Quantas pessoas bebem bebidas alcoolicas?</label>
+                    <input type="number"  placeholder="Digite o valor..." id="pessoasQueBebem">
+                    <p class="error-message-number" style="color: red;"></p>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section class="container-tabela">
+            <table>
+                <thead>
+                    <tr class="titulo-tabela">
+                        <th>Tabela de Quantidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>carne</td>
+                        <td id="quantidadeCarne"></td>
+                    </tr>
+                    <tr>
+                        <td>cerveja</td>
+                        <td id="quantidadeCerveja"></td>
+                    </tr>
+                    <tr>
+                        <td>sal grosso</td>
+                        <td id="quantidadeSal"></td>
+                    </tr>
+                    <tr>
+                        <td>refrigerante</td>
+                        <td id="quantidadeRefrigerante"></td>
+                    </tr>
+                    <tr>
+                        <td>água</td>
+                        <td id="quantidadeAgua"></td>
+                    </tr>
+                    <tr>
+                        <td>carvão</td>
+                        <td id="quantidadeCarvao"></td>
+                    </tr>
+                    <tr>
+                        <td> gelo</td>
+                        <td id="quantidadeGelo"></td>
+                    </tr>
+                    <tr>
+                        <td>pão de alho</td>
+                        <td id="quantidadePaoAlho"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
